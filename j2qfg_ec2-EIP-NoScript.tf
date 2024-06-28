@@ -141,7 +141,7 @@ resource "aws_instance" "vulnerable" {
   tags = {
     Name      = "Sales and Trading ${var.global_random_var}"
     yor_name  = "vulnerable"
-    yor_trace = "96b50571-a766-44a8-870e-40b45369dd52"
+    yor_trace = "96b50571-1234-44a8-870e-40b45369dd52"
   }
 
   depends_on = [aws_vpc.demo-foundations-vpc]
