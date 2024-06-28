@@ -151,6 +151,9 @@ resource "aws_instance" "vulnerable" {
     delete_on_termination = true
     encrypted             = true
   }
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 
 # resource "aws_ebs_volume" "additional_disk" {
